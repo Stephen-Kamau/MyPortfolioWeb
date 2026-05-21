@@ -8,13 +8,14 @@ const Contact = () => {
   const [form, setForm] = useState({ name: "", email: "", kind: "Project enquiry", msg: "" });
   const [sent, setSent] = useState(false);
 
-  const submit = (e) => {
-    e.preventDefault();
+  const launchMail = () => {
     const subject = encodeURIComponent(`${form.kind}: ${form.name || 'New enquiry'}`);
     const body = encodeURIComponent(
       `Hi Stephen,\n\n${form.msg}\n\n---\nFrom: ${form.name} <${form.email}>\nType: ${form.kind}`
     );
-    window.location.href = `mailto:${D.email}?subject=${subject}&body=${body}`;
+    const href = `mailto:${D.email}?subject=${subject}&body=${body}`;
+    // Some browsers block mailto launches unless triggered from a direct click.
+    window.location.assign(href);
     setSent(true);
   };
 
@@ -60,7 +61,7 @@ const Contact = () => {
           </div>
 
           {/* form */}
-          <form onSubmit={submit} style={{
+          <form onSubmit={(e) => e.preventDefault()} style={{
             border: '1px solid oklch(0.30 0.014 60)',
             borderRadius: 14, padding: 28,
             background: 'oklch(0.24 0.014 60)',
@@ -119,7 +120,7 @@ const Contact = () => {
               />
             </Field>
 
-            <button type="submit" className="btn" style={{
+            <button type="button" onClick={launchMail} className="btn" style={{
               background: 'var(--accent)', color: 'var(--ink)',
               justifyContent: 'center', padding: '14px 18px',
               fontWeight: 500,
