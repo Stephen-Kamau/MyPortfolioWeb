@@ -1,50 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://stiveckamash.vercel.app/</loc>
+    <loc>http://localhost:5173/</loc>
     <lastmod>2026-05-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://stiveckamash.vercel.app/og-image.png</image:loc>
+      <image:loc>http://localhost:5173/og-image.png</image:loc>
       <image:title>Stephen Kamau — Senior Data &amp; ML Engineer</image:title>
-      <image:caption>Stephen Kamau, Senior Data and Machine Learning Engineer based in Nairobi, Kenya. Available for freelance engagements worldwide.</image:caption>
+      <image:caption>Stephen Kamau, Senior Data and Machine Learning Engineer based in Nairobi, Kenya.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://stiveckamash.vercel.app/#about</loc>
+    <loc>http://localhost:5173/#about</loc>
+    <lastmod>2026-05-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://stiveckamash.vercel.app/#services</loc>
+    <loc>http://localhost:5173/#services</loc>
+    <lastmod>2026-05-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://stiveckamash.vercel.app/#work</loc>
+    <loc>http://localhost:5173/#work</loc>
+    <lastmod>2026-05-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://stiveckamash.vercel.app/#experience</loc>
+    <loc>http://localhost:5173/#experience</loc>
+    <lastmod>2026-05-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://stiveckamash.vercel.app/#stack</loc>
+    <loc>http://localhost:5173/#stack</loc>
+    <lastmod>2026-05-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://stiveckamash.vercel.app/#contact</loc>
+    <loc>http://localhost:5173/#contact</loc>
+    <lastmod>2026-05-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://stiveckamash.vercel.app/llms.txt</loc>
+    <loc>http://localhost:5173/llms.txt</loc>
+    <lastmod>2026-05-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
