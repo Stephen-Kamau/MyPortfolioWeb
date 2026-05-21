@@ -11,7 +11,7 @@
 - **Phone:** +254 798 355 947
 - **GitHub:** https://github.com/Stephen-Kamau
 - **LinkedIn:** https://www.linkedin.com/in/stiveckamash/
-- **Portfolio:** https://stephen-kamau.github.io/
+- **Portfolio:** https://stiveckamash.vercel.app/
 - **Currently:** Data Scientist & ML Engineer at Prospect33 (since January 2024)
 
 ## What I do
@@ -94,6 +94,6 @@ MedTech computer-vision platform screening medical images across X-ray, CT, and 
 
 ## Optional
 
-- [Portfolio website](https://stephen-kamau.github.io/)
+- [Portfolio website](https://stiveckamash.vercel.app/)
 - [GitHub profile](https://github.com/Stephen-Kamau)
 - [LinkedIn](https://www.linkedin.com/in/stiveckamash/)

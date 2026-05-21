@@ -100,7 +100,7 @@ User-agent: TelegramBot
 Allow: /
 
 # Sitemap
-Sitemap: https://stephen-kamau.github.io/sitemap.xml
+Sitemap: https://stiveckamash.vercel.app/sitemap.xml
 
 # llms.txt — LLM-readable plain-English overview
 # See https://llmstxt.org/
