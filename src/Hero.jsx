@@ -1,6 +1,9 @@
 // Hero — big editorial headline with terminal/identity card on right
+import Icon from "./icons.jsx";
+import { PORTFOLIO_DATA } from "./data.jsx";
+
 const Hero = () => {
-  const D = window.PORTFOLIO_DATA;
+  const D = PORTFOLIO_DATA;
   return (
     <section id="top" style={{ position: 'relative', overflow: 'hidden' }} data-screen-label="Hero">
       <div className="grid-faint" style={{
@@ -107,7 +110,7 @@ const Hero = () => {
 };
 
 const IdentityCard = () => {
-  const D = window.PORTFOLIO_DATA;
+  const D = PORTFOLIO_DATA;
   return (
     <div style={{
       border: '1px solid var(--line)', borderRadius: 14,
@@ -172,4 +175,4 @@ const Row = ({ label, value, href }) => (
   </div>
 );
 
-window.Hero = Hero;
+export default Hero;

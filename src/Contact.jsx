@@ -1,8 +1,12 @@
 // Contact — big editorial CTA + form
+import { useState } from "react";
+import Icon from "./icons.jsx";
+import { PORTFOLIO_DATA } from "./data.jsx";
+
 const Contact = () => {
-  const D = window.PORTFOLIO_DATA;
-  const [form, setForm] = React.useState({ name: '', email: '', kind: 'Project enquiry', msg: '' });
-  const [sent, setSent] = React.useState(false);
+  const D = PORTFOLIO_DATA;
+  const [form, setForm] = useState({ name: "", email: "", kind: "Project enquiry", msg: "" });
+  const [sent, setSent] = useState(false);
 
   const submit = (e) => {
     e.preventDefault();
@@ -194,4 +198,4 @@ const Footer = () => (
   </div>
 );
 
-window.Contact = Contact;
+export default Contact;

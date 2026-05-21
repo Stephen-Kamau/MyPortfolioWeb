@@ -1,12 +1,15 @@
 // Sticky top navigation
+import { useEffect, useState } from "react";
+import Icon from "./icons.jsx";
+
 const Nav = () => {
-  const [open, setOpen] = React.useState(false);
-  const [scrolled, setScrolled] = React.useState(false);
-  const [theme, setTheme] = React.useState(() =>
+  const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const [theme, setTheme] = useState(() =>
     document.documentElement.getAttribute('data-theme') || 'light'
   );
 
-  React.useEffect(() => {
+  useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
     window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
@@ -142,4 +145,4 @@ const Nav = () => {
   );
 };
 
-window.Nav = Nav;
+export default Nav;

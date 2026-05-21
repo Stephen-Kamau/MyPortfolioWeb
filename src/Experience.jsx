@@ -1,6 +1,11 @@
 // Experience timeline
+import { useState } from "react";
+import Icon from "./icons.jsx";
+import { PORTFOLIO_DATA } from "./data.jsx";
+import SectionHead from "./SectionHead.jsx";
+
 const Experience = () => {
-  const D = window.PORTFOLIO_DATA;
+  const D = PORTFOLIO_DATA;
   return (
     <section id="experience" className="section" data-screen-label="Experience">
       <div className="container-x">
@@ -22,7 +27,7 @@ const Experience = () => {
 };
 
 const ExpRow = ({ exp, idx, isLast }) => {
-  const [open, setOpen] = React.useState(idx === 0);
+  const [open, setOpen] = useState(idx === 0);
   return (
     <div style={{
       display: 'grid',
@@ -96,4 +101,4 @@ const ExpRow = ({ exp, idx, isLast }) => {
   );
 };
 
-window.Experience = Experience;
+export default Experience;

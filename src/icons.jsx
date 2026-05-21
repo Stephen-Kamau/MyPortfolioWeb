@@ -1,5 +1,5 @@
 // Simple inline icon set — pure SVG, line-based
-const Icon = ({ name, size = 16, stroke = 1.5, className = "" }) => {
+export const Icon = ({ name, size = 16, stroke = 1.5, className = "" }) => {
   const s = { width: size, height: size };
   const common = {
     viewBox: "0 0 24 24",
@@ -57,4 +57,4 @@ const Icon = ({ name, size = 16, stroke = 1.5, className = "" }) => {
   }
 };
 
-window.Icon = Icon;
+export default Icon;

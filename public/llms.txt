@@ -1,0 +1,99 @@
+# Stephen Kamau
+
+> Senior Data & ML Engineer based in Nairobi, Kenya. 4+ years of production experience building data pipelines (Airflow, dbt, Snowflake), deploying ML on AWS (SageMaker, Lambda, EKS), and shipping LLM agents, RAG systems, transaction anomaly detection, and chatbots for top-tier financial, healthcare, and logistics clients. Available for freelance engagements worldwide.
+
+## Who I am
+
+- **Name:** Stephen Kamau
+- **Title:** Senior Data Engineer · ML Engineer · LLM / RAG Engineer · Backend (Python & Java) Developer
+- **Based:** Nairobi, Kenya (UTC+3) — works remote with teams worldwide
+- **Email:** stiveckamash@gmail.com
+- **Phone:** +254 798 355 947
+- **GitHub:** https://github.com/Stephen-Kamau
+- **LinkedIn:** https://www.linkedin.com/in/stiveckamash/
+- **Portfolio:** https://stiveckamash.vercel.app/
+- **Currently:** Data Scientist & ML Engineer at Prospect33 (since January 2024)
+
+## What I do
+
+I design and run production data systems and the machine-learning systems that live on top of them. Concretely:
+
+1. **End-to-end data pipelines** — Airflow, dbt, Snowflake, PySpark, PostgreSQL. Ingestion, transformation, quality gates, lineage, SLA-backed monitoring. Regulated-industry ready.
+2. **ML deployment & MLOps** — Production ML services on AWS SageMaker, Lambda, and EKS. Containerised inference, CI/CD, drift monitoring, on-call playbooks.
+3. **LLM agents & RAG integration** — LangChain, LangGraph, RAG pipelines over private corpora. Document intelligence, structured extraction, AI features that ship to real users.
+4. **Chatbots & conversational AI** — Function-calling agents, retrieval, evaluations (Ragas, DeepEval), guardrails, analytics on every conversation.
+5. **Classical ML & forecasting** — Scikit-learn, XGBoost, PyTorch, time-series. The right answer is sometimes a well-tuned tree model rather than a 70B-parameter one.
+6. **Backend services** — Python (FastAPI, Flask) and Java (Spring Boot) microservices.
+7. **Transaction anomaly detection** — Real-time fraud / suspicious-pattern detection models with explanations attached for compliance review.
+
+## Available for freelance / contract
+
+I take on a small number of freelance and contract engagements alongside my role at Prospect33. Best fit:
+
+- Designing a new data platform from scratch (Airflow + dbt + Snowflake or PostgreSQL)
+- Deploying an ML model to production on AWS
+- Adding LLM features to an existing product (RAG, agents, structured extraction)
+- Building a customer-facing or internal chatbot
+- Auditing a stalled MLOps setup and fixing it
+- One-off computer vision / NLP / classical ML problems
+
+Reach out at stiveckamash@gmail.com.
+
+## Experience
+
+### Prospect33 — Data Scientist & ML Engineer (Jan 2024 to Present)
+AI-powered data intelligence for top-tier U.S. financial institutions.
+- LLM agents for document triage, structured extraction, and analyst-style summarisation across legal and financial corpora.
+- Transaction anomaly-detection models flagging suspicious patterns in real time with compliance-grade explanations.
+- End-to-end Airflow / dbt / Snowflake pipelines for a regulated U.S. banking client.
+- Deployed and monitored ML + LLM services on SageMaker, Lambda, and EKS with CloudWatch SLA alerting.
+- OCR + LLM extraction pipelines on Lambda — removed 80% of manual data-entry workload.
+- LangChain + RAG integration for AI-driven analytics in a compliance-sensitive environment.
+- Led migration of Python / FastAPI prototypes into Java Spring Boot microservices.
+
+### Fleet Logistics — Data & Backend Engineer (Apr 2023 to Jan 2024)
+Fleet management and delivery optimisation across East Africa.
+- PostgreSQL data pipelines powering route optimisation; delivered 30% faster deliveries.
+- Integrated the analytics platform with 5+ external client systems via REST.
+- Automated reporting with Metabase, eliminating hours of weekly manual processing.
+- Reduced system downtime by 95% through monitoring, RCA, and infra improvements.
+
+### Neural Labs Africa — Machine Learning Engineer, Part-time (Apr 2022 to Dec 2023)
+MedTech computer-vision platform screening medical images across X-ray, CT, and MRI modalities.
+- FastAPI + Docker inference services on EC2 / SageMaker for clinical imaging.
+- Docker / K8s / GitHub Actions CI/CD; cut deployment workload by 80%.
+- Spark + HDFS for distributed preprocessing of large medical imaging datasets.
+- Prometheus + Grafana for model & infra health monitoring.
+- Led migration of ML infrastructure from DigitalOcean to AWS.
+
+## Selected open-source projects
+
+- **Flipkart Reviews — Sentiment Analysis** (BERT / RoBERTa / XGBoost). BERT best F1 0.895 across 12k reviews. https://github.com/Stephen-Kamau/Flipkart_Scraping_and_sentiment_analysis
+- **Bias Audit — Gender Classification across Age & Race** (UTKFace, fairness in ML). Compared CNN, ResNet, RandomForest, SVM. https://github.com/Stephen-Kamau/Impact-of-Age-and-Race-on-Gender-Classification-Using-Facial-Data
+- **App Analyser — No-Code ML Studio** (Streamlit). Upload CSV → EDA → train → export model. https://github.com/Stephen-Kamau/App-Analyser-A-No-Code-Machine-Learning-App-with-Streamlit
+- **Walmart Product Recommender** (k-NN + Flask REST API). Content-based recs over 30k products. https://github.com/Stephen-Kamau/Enhancing-Customer-Shopping-Experience-with-ML-Based-Recommender-System
+- **More projects:** https://github.com/Stephen-Kamau/Machine-Learning-Based-Projects
+
+## Tech stack
+
+- **Data & ETL:** Apache Airflow, dbt, Snowflake, PySpark, PostgreSQL, MySQL, BigQuery, Delta Lake, HDFS
+- **Classical ML:** PyTorch, Scikit-learn, XGBoost, BERT, RoBERTa, Pandas, NumPy, Statsmodels
+- **LLMs & GenAI:** LangChain, LangGraph, RAG pipelines, OpenAI APIs, Anthropic APIs, Vector DBs (Pinecone, FAISS), LLM evaluations (Ragas, DeepEval), prompt engineering
+- **Cloud & MLOps:** AWS (SageMaker, Lambda, EKS, S3, EC2), Docker, Kubernetes, GitHub Actions, CI/CD
+- **Backend:** Python (FastAPI, Flask), Java (Spring Boot), REST APIs, microservices
+- **BI & Monitoring:** Metabase, Streamlit, Looker, Grafana, Prometheus, CloudWatch
+- **Languages:** Python, SQL, Java, C++, TypeScript
+
+## Recognition
+
+- 1st place — DataFestAfrica 2022 Datathon
+- DataCamp Data Engineer Certification
+- Zindi — Mental Health Prediction for Kenyan Universities
+- MachineHack — Electronics Price Prediction
+- BSc Computer Science, Multimedia University of Kenya, 2022
+
+## Optional
+
+- [Portfolio website](https://stiveckamash.vercel.app/)
+- [GitHub profile](https://github.com/Stephen-Kamau)
+- [LinkedIn](https://www.linkedin.com/in/stiveckamash/)

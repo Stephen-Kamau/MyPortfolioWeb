@@ -1,5 +1,5 @@
 // Portfolio content / data
-window.PORTFOLIO_DATA = {
+export const PORTFOLIO_DATA = {
   name: "Stephen Kamau",
   role: "Data & ML Engineer",
   location: "Nairobi, Kenya",
@@ -184,3 +184,5 @@ window.PORTFOLIO_DATA = {
     "Kubernetes", "PostgreSQL", "FastAPI", "Streamlit", "Metabase",
   ],
 };
+
+export default PORTFOLIO_DATA;

@@ -1,4 +1,12 @@
-// App root
+import Nav from "./Nav.jsx";
+import Hero from "./Hero.jsx";
+import About from "./About.jsx";
+import Services from "./Services.jsx";
+import Work from "./Work.jsx";
+import Experience from "./Experience.jsx";
+import Stack from "./Stack.jsx";
+import Contact from "./Contact.jsx";
+
 const App = () => {
   return (
     <>
@@ -16,5 +24,4 @@ const App = () => {
   );
 };
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<App />);
+export default App;

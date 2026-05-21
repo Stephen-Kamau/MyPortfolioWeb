@@ -1,6 +1,10 @@
 // Work — selected projects, with project-specific geometric "proof" visuals
+import Icon from "./icons.jsx";
+import { PORTFOLIO_DATA } from "./data.jsx";
+import SectionHead from "./SectionHead.jsx";
+
 const Work = () => {
-  const D = window.PORTFOLIO_DATA;
+  const D = PORTFOLIO_DATA;
   return (
     <section id="work" className="section" data-screen-label="Work" style={{ background: 'var(--paper)' }}>
       <div className="container-x">
@@ -459,4 +463,4 @@ const VisualRecommender = () => {
   );
 };
 
-window.Work = Work;
+export default Work;

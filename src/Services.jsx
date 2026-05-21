@@ -1,6 +1,11 @@
 // Services / What I do — grid of offerings
+import { useState } from "react";
+import Icon from "./icons.jsx";
+import { PORTFOLIO_DATA } from "./data.jsx";
+import SectionHead from "./SectionHead.jsx";
+
 const Services = () => {
-  const D = window.PORTFOLIO_DATA;
+  const D = PORTFOLIO_DATA;
   return (
     <section id="services" className="section" data-screen-label="Services">
       <div className="container-x">
@@ -26,7 +31,7 @@ const Services = () => {
 };
 
 const ServiceCard = ({ s }) => {
-  const [hover, setHover] = React.useState(false);
+  const [hover, setHover] = useState(false);
   return (
     <div
       onMouseEnter={() => setHover(true)}
@@ -67,32 +72,4 @@ const ServiceCard = ({ s }) => {
   );
 };
 
-const SectionHead = ({ num, eyebrow, title, sub }) => (
-  <div style={{
-    display: 'grid', gridTemplateColumns: 'minmax(0, 1.4fr) minmax(0, 1fr)',
-    gap: 56, alignItems: 'end',
-  }} className="sec-head-grid">
-    <div>
-      <div className="label-eyebrow" style={{ marginBottom: 24 }}>
-        <span className="accent">{num}</span>&nbsp;&nbsp;·&nbsp;&nbsp;{eyebrow}
-      </div>
-      <h2 className="font-serif" style={{
-        fontSize: 'clamp(40px, 5.5vw, 72px)', lineHeight: 1.0,
-        margin: 0, letterSpacing: '-0.02em',
-      }}>{title}</h2>
-    </div>
-    {sub && (
-      <p style={{ color: 'var(--ink-2)', fontSize: 17, lineHeight: 1.5, margin: 0, maxWidth: 460 }}>
-        {sub}
-      </p>
-    )}
-    <style>{`
-      @media (max-width: 900px) {
-        .sec-head-grid { grid-template-columns: 1fr !important; gap: 24px !important; }
-      }
-    `}</style>
-  </div>
-);
-
-window.Services = Services;
-window.SectionHead = SectionHead;
+export default Services;

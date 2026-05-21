@@ -1,6 +1,10 @@
 // About / Recognition — a quieter section
+import Icon from "./icons.jsx";
+import { PORTFOLIO_DATA } from "./data.jsx";
+import SectionHead from "./SectionHead.jsx";
+
 const About = () => {
-  const D = window.PORTFOLIO_DATA;
+  const D = PORTFOLIO_DATA;
   return (
     <section id="about" className="section" data-screen-label="About" style={{ background: 'var(--paper)' }}>
       <div className="container-x">
@@ -88,4 +92,4 @@ const Fact = ({ label, value, sub }) => (
   </div>
 );
 
-window.About = About;
+export default About;

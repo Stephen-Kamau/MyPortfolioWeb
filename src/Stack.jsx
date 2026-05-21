@@ -1,6 +1,10 @@
 // Stack — tools, organized
+import Icon from "./icons.jsx";
+import { PORTFOLIO_DATA } from "./data.jsx";
+import SectionHead from "./SectionHead.jsx";
+
 const Stack = () => {
-  const D = window.PORTFOLIO_DATA;
+  const D = PORTFOLIO_DATA;
   return (
     <section id="stack" className="section" data-screen-label="Stack" style={{ background: 'var(--paper)' }}>
       <div className="container-x">
@@ -49,4 +53,4 @@ const Stack = () => {
   );
 };
 
-window.Stack = Stack;
+export default Stack;
