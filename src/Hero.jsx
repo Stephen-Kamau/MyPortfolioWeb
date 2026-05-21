@@ -73,6 +73,12 @@ const Hero = () => {
                   <Icon name="mail" size={14} /> Email
                 </a>
               </div>
+
+              {D.promo && (
+                <div style={{ marginTop: 14, color: "var(--ink-2)", fontSize: 14 }}>
+                  {D.promo} <a className="link-underline" href="#contact">Start here</a>.
+                </div>
+              )}
             </div>
 
             {/* Identity card */}
@@ -117,6 +123,37 @@ const IdentityCard = () => {
       background: 'var(--paper)', padding: 0, overflow: 'hidden',
       boxShadow: '0 1px 0 oklch(0.92 0.012 70 / 1)',
     }}>
+      <div style={{ display: "flex", alignItems: "center", gap: 12, padding: "16px 16px 0" }}>
+        <div
+          style={{
+            width: 52,
+            height: 52,
+            borderRadius: 999,
+            overflow: "hidden",
+            background: "var(--bg)",
+            border: "1px solid var(--line)",
+            boxShadow:
+              "0 10px 24px -14px oklch(0.20 0.012 60 / 0.35), 0 1px 0 oklch(0.92 0.012 70 / 1)",
+            flexShrink: 0,
+          }}
+          aria-hidden="true"
+        >
+          <img
+            src="/avatar.jpg"
+            alt=""
+            width={52}
+            height={52}
+            loading="lazy"
+            decoding="async"
+            style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
+          />
+        </div>
+        <div style={{ lineHeight: 1.15 }}>
+          <div style={{ fontWeight: 600, fontSize: 14 }}>{D.name}</div>
+          <div className="num-eyebrow" style={{ fontSize: 10 }}>Data &amp; ML Engineer</div>
+        </div>
+      </div>
+
       {/* terminal */}
       <div style={{
         background: 'oklch(0.20 0.012 60)', color: 'oklch(0.88 0.014 65)',

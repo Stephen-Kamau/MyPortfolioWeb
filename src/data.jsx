@@ -7,7 +7,8 @@ export const PORTFOLIO_DATA = {
   phone: "+254 798 355 947",
   github: "https://github.com/Stephen-Kamau",
   linkedin: "https://www.linkedin.com/in/stiveckamash/",
-  status: "Open for freelance ML & data projects · remote-friendly",
+  status: "Open to ML, data pipelines, and chatbot/RAG projects · remote-friendly",
+  promo: "Want a pipeline, RAG system, or chatbot shipped for you? Let’s talk.",
 
   // services I offer
   services: [
