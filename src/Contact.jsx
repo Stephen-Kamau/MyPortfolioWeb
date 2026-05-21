@@ -7,16 +7,34 @@ const Contact = () => {
   const D = PORTFOLIO_DATA;
   const [form, setForm] = useState({ name: "", email: "", kind: "Project enquiry", msg: "" });
   const [sent, setSent] = useState(false);
+  const [copied, setCopied] = useState(false);
 
-  const launchMail = () => {
+  const buildMailtoHref = () => {
     const subject = encodeURIComponent(`${form.kind}: ${form.name || 'New enquiry'}`);
+    const message = (form.msg || "").trim();
     const body = encodeURIComponent(
-      `Hi Stephen,\n\n${form.msg}\n\n---\nFrom: ${form.name} <${form.email}>\nType: ${form.kind}`
+      `${message}\n\n---\nFrom: ${form.name} <${form.email}>\nType: ${form.kind}`
     );
-    const href = `mailto:${D.email}?subject=${subject}&body=${body}`;
-    // Some browsers block mailto launches unless triggered from a direct click.
-    window.location.assign(href);
-    setSent(true);
+    return `mailto:${D.email}?subject=${subject}&body=${body}`;
+  };
+
+  const buildGmailComposeUrl = () => {
+    const subject = encodeURIComponent(`${form.kind}: ${form.name || 'New enquiry'}`);
+    const message = (form.msg || "").trim();
+    const body = encodeURIComponent(
+      `${message}\n\n---\nFrom: ${form.name} <${form.email}>\nType: ${form.kind}`
+    );
+    return `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(D.email)}&su=${subject}&body=${body}`;
+  };
+
+  const copyEmail = async () => {
+    try {
+      await navigator.clipboard.writeText(D.email);
+      setCopied(true);
+      window.setTimeout(() => setCopied(false), 1500);
+    } catch (e) {
+      // ignore
+    }
   };
 
   return (
@@ -120,16 +138,22 @@ const Contact = () => {
               />
             </Field>
 
-            <button type="button" onClick={launchMail} className="btn" style={{
+            <a href={buildMailtoHref()} onClick={() => setSent(true)} className="btn" style={{
               background: 'var(--accent)', color: 'var(--ink)',
               justifyContent: 'center', padding: '14px 18px',
               fontWeight: 500,
+              textDecoration: 'none',
             }}>
-              {sent ? 'Opening your mail client…' : 'Send enquiry'} <Icon name="arrow-up-right" size={14}/>
-            </button>
+              {sent ? 'Opening your mail app…' : 'Send email'} <Icon name="arrow-up-right" size={14}/>
+            </a>
 
             <div style={{ fontSize: 11, color: 'oklch(0.65 0.014 65)', fontFamily: "'JetBrains Mono', monospace" }}>
-              By submitting, you'll open your email client with the message pre-filled.
+              If your browser blocks <span style={{ fontFamily: "'JetBrains Mono', monospace" }}>mailto:</span>, use{" "}
+              <a href={buildGmailComposeUrl()} target="_blank" rel="noreferrer" style={{ color: "var(--accent)" }}>Gmail</a>
+              {" "}or{" "}
+              <button type="button" onClick={copyEmail} style={{ background: "transparent", border: "none", padding: 0, color: "var(--accent)", cursor: "pointer", fontFamily: "'JetBrains Mono', monospace" }}>
+                {copied ? "copied" : "copy email"}
+              </button>.
             </div>
           </form>
         </div>
@@ -183,7 +207,15 @@ const ContactLink = ({ dark, icon, label, href }) => {
       {href && <Icon name="arrow-up-right" size={14}/>}
     </span>
   );
-  return href ? <a href={href} target="_blank" rel="noreferrer">{inner}</a> : inner;
+  if (!href) return inner;
+  const isMailOrTel = href.startsWith("mailto:") || href.startsWith("tel:");
+  return isMailOrTel ? (
+    <a href={href}>{inner}</a>
+  ) : (
+    <a href={href} target="_blank" rel="noreferrer">
+      {inner}
+    </a>
+  );
 };
 
 const Footer = () => (
