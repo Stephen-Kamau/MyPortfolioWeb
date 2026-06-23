@@ -10,26 +10,30 @@ const featuredProjects = [
     title: "Covid Tracker Dashboard",
     description: "Live dashboard for tracking COVID-19 statistics using data visualization and real-time updates.",
     tags: ["Python", "Dash", "Pandas", "GeoPandas", "Plotly"],
-    github: "https://github.com/Stephen-Kamau/Machine-Learning-Based-Projects",
+    // github: "https://github.com/Stephen-Kamau/Machine-Learning-Based-Projects",
+    "github": "https://github.com/Stephen-Kamau/Covid19_Analysis",
     liveLink: "#",
   },
   {
     title: "Flipkart Products Reviews Scraping with BeautifulSoup For Sentiment Analysis",
     description: "Scraping Flipkart data and performing sentiment analysis using BERT, RoBERTa, XGBoost, and BeautifulSoup.",
     tags: ["Python", "BeautifulSoup", "BERT", "RoBERTa", "XGBoost", "Sentiment Analysis"],
-    github: "https://github.com/Stephen-Kamau/Machine-Learning-Based-Projects/blob/main/flipkart_scape_reviews/README.md"
+    // github: "https://github.com/Stephen-Kamau/Machine-Learning-Based-Projects/blob/main/flipkart_scape_reviews/README.md"
+    "github": "https://github.com/Stephen-Kamau/Machine-Learning-Based-Projects/tree/main/flipkart_scape_reviews"
   },
   {
     title: "Impact of Race & Age on Gender Classification using CNN and Transfer Learning (ResNet)",
     description: "Evaluate the gender classification performance of various models across different age and race groups using the UTKFace dataset.",
     tags: ["Python", "CNN", "ResNet", "Transfer Learning", "Image Classification"],
-    github: "https://github.com/Stephen-Kamau/Machine-Learning-Based-Projects/blob/main/impact_of_race_age_on_gender_classification/README.md"
+    // github: "https://github.com/Stephen-Kamau/Machine-Learning-Based-Projects/blob/main/impact_of_race_age_on_gender_classification/README.md"
+    "github": "https://github.com/Stephen-Kamau/Machine-Learning-Based-Projects/tree/main/impact_of_race_age_on_gender_classification"
   },
   {
     title: "Product Recommendation Models and API",
     description: "A Flask-based API for providing product recommendations using a pre-trained Nearest Neighbours model. Includes web and REST API interfaces for generating recommendations.",
     tags: ["Python", "Flask", "API", "Machine Learning", "Recommendation System"],
-    github: "https://github.com/Stephen-Kamau/Machine-Learning-Based-Projects/blob/main/walmart_prod_recomentation/README.md"
+    // github: "https://github.com/Stephen-Kamau/Machine-Learning-Based-Projects/blob/main/walmart_prod_recomentation/README.md"
+    "github": "https://github.com/Stephen-Kamau/Machine-Learning-Based-Projects/tree/main/walmart_prod_recomentation"
   }
 ];
 
